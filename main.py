@@ -15,5 +15,6 @@ if response.ok:
     if stock_info == str("Yes"):
         file = open("hack_informations.txt", "w+")
         file.write("There is the informations of your hacking : \n" + hack_infos.text)
+        file.close()
 else:
     print(Fore.GREEN + "Yoohoooo ! Your account has not been hacked !")
